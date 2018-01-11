@@ -12,6 +12,7 @@ import java.util.*;
 /**
  * MapReduce Job2: split N-Gram to starting_phrase, following_phrase=count(Mapper) and write to database(Reducer)
  */
+
 public class LanguageModel {
 	public static class Map extends Mapper<LongWritable, Text, Text, Text> {
 

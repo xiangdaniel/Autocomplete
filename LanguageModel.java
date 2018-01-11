@@ -12,6 +12,7 @@ import java.util.*;
 /**
  * MapReduce Job2: split N-Gram to starting_phrase, following_phrase=count(Mapper) and write to database(Reducer)
  */
+
 public class LanguageModel {
 	public static class Map extends Mapper<LongWritable, Text, Text, Text> {
 
@@ -73,7 +74,7 @@ public class LanguageModel {
 		@Override
 		public void reduce(Text key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
 			
-			//rank top n phrases then write to hdfs
+			//rank top n phrases then write to database
 			/* key: i love
 			   values: <you=300, her=200, BigData=100>
 			 */

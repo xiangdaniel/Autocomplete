@@ -60,7 +60,7 @@ public class Driver {
 		
 		DBConfiguration.configureDB(conf2, 
 				"com.mysql.jdbc.Driver",
-				"jdbc:mysql://192.168.1.69:8889/test",
+				"jdbc:mysql://local_ip_address:MySQL_port/test", // not show ip address
 				"root",
 				"root");
 		

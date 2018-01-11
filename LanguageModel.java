@@ -73,7 +73,7 @@ public class LanguageModel {
 		@Override
 		public void reduce(Text key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
 			
-			//rank top n phrases then write to hdfs
+			//rank top n phrases then write to database
 			/* key: i love
 			   values: <you=300, her=200, BigData=100>
 			 */
